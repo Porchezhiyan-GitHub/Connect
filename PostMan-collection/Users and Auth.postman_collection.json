@@ -1,0 +1,71 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Users and Auth",
+		"_postman_id": "2c4deed7-290e-1c1c-439d-1fc3b870e3cd",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register user",
+			"request": {
+				"url": "http://localhost:9000/api/users/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"sankar\",\n\t\"email\" : \"sank@sank.com\",\n\t\"password\" : \"123456\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Auth",
+			"request": {
+				"url": "http://localhost:9000/api/auth/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-jwt",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWVmOGM1MjBjY2NhZTMxZTA3Y2JjM2RjIn0sImlhdCI6MTU5Mzg2MDUxMSwiZXhwIjoxNTk0MjIwNTExfQ.1cT6cEGM3cX3NFztCLlvdaS2WkYGtEo4fGzLqBFCymk",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"url": "http://localhost:9000/api/auth/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\" : \"porchezhiyan@outlook.com\",\n\t\"password\": \"123456\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

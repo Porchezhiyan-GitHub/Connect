@@ -1,0 +1,5 @@
+{
+  "jwtSecret": "kadhaipomaa!",
+  "mongoHost": "mongodb://localhost:27017/test",
+  "gitHubToken" : "88f4f9e4a5c735978b4aa54c63f552af27af22b0"
+}

@@ -1,0 +1,163 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Posts",
+		"_postman_id": "3a0f6f86-20c6-4f70-0c31-e50b91a60834",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Posts",
+			"request": {
+				"url": "http://localhost:9000/api/posts/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "x-auth-jwt",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWYyMmUxYzkwY2VkMWM0N2U3MmZhMzQ3In0sImlhdCI6MTU5NjgxNjI4NCwiZXhwIjoxNTk3MTc2Mjg0fQ.T9oPOlSzn8dESC8svE90BS89jySwtbCMuT4umjcvhDs",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"postContent\": \"Fusce commodo nulla sapien, pellentesque cursus risus accumsan semper. Cras eu ligula elementum, posuere ligula sit amet, hendrerit lorem. Aliquam suscipit tortor sed elementum porttitor. In congue ligula vel gravida ornare. Donec augue nisi, rhoncus at tempus at, consectetur quis felis. Pellentesque ligula arcu, porttitor vel posuere vestibulum, pellentesque at ex. Aenean ac vulputate lorem, vitae blandit mi. Aliquam non tempus odio. Aenean placerat odio nulla, id tincidunt massa volutpat eget. Aenean ut orci metus. Etiam malesuada purus tellus, at tincidunt libero mollis vel. Mauris arcu turpis, elementum quis vestibulum et, consectetur id turpis. In ac augue nisl. Vestibulum laoreet dignissim odio dignissim laoreet.\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Posts",
+			"request": {
+				"url": "http://localhost:9000/api/posts",
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-jwt",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWYyMmUxYzkwY2VkMWM0N2U3MmZhMzQ3In0sImlhdCI6MTU5NjgxNjI4NCwiZXhwIjoxNTk3MTc2Mjg0fQ.T9oPOlSzn8dESC8svE90BS89jySwtbCMuT4umjcvhDs",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Post By Id",
+			"request": {
+				"url": "http://localhost:9000/api/posts/5f2d904d50848340e7015f05",
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-jwt",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWYyMmUxYzkwY2VkMWM0N2U3MmZhMzQ3In0sImlhdCI6MTU5NjgxNjI4NCwiZXhwIjoxNTk3MTc2Mjg0fQ.T9oPOlSzn8dESC8svE90BS89jySwtbCMuT4umjcvhDs",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a Post",
+			"request": {
+				"url": "http://localhost:9000/api/posts/5f2d938add9d88422421b88e",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-auth-jwt",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWYyMmUxYzkwY2VkMWM0N2U3MmZhMzQ3In0sImlhdCI6MTU5NjgxNjI4NCwiZXhwIjoxNTk3MTc2Mjg0fQ.T9oPOlSzn8dESC8svE90BS89jySwtbCMuT4umjcvhDs",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Like a Post",
+			"request": {
+				"url": "http://localhost:9000/api/posts/like/5f2d7da650f7a139b8f9c0ad",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-auth-jwt",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWYyMmUxYzkwY2VkMWM0N2U3MmZhMzQ3In0sImlhdCI6MTU5NjgxNjI4NCwiZXhwIjoxNTk3MTc2Mjg0fQ.T9oPOlSzn8dESC8svE90BS89jySwtbCMuT4umjcvhDs",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Unlike a Post",
+			"request": {
+				"url": "http://localhost:9000/api/posts/unlike/5f2d7da650f7a139b8f9c0ad",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-auth-jwt",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWYyMmUxYzkwY2VkMWM0N2U3MmZhMzQ3In0sImlhdCI6MTU5NjgxNjI4NCwiZXhwIjoxNTk3MTc2Mjg0fQ.T9oPOlSzn8dESC8svE90BS89jySwtbCMuT4umjcvhDs",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Comment on a Post",
+			"request": {
+				"url": "http://localhost:9000/api/posts/comment/5f2d7da650f7a139b8f9c0ad",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-auth-jwt",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWYyMmUxYzkwY2VkMWM0N2U3MmZhMzQ3In0sImlhdCI6MTU5NjgxNjI4NCwiZXhwIjoxNTk3MTc2Mjg0fQ.T9oPOlSzn8dESC8svE90BS89jySwtbCMuT4umjcvhDs",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"commentContent\" : \"Thank you for a great post!\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete  a Post",
+			"request": {
+				"url": "http://localhost:9000/api/posts/like/5f2d7da650f7a139b8f9c0ad",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-auth-jwt",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWYyMmUxYzkwY2VkMWM0N2U3MmZhMzQ3In0sImlhdCI6MTU5NjgxNjI4NCwiZXhwIjoxNTk3MTc2Mjg0fQ.T9oPOlSzn8dESC8svE90BS89jySwtbCMuT4umjcvhDs",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

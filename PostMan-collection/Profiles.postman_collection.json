@@ -1,0 +1,204 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Profiles",
+		"_postman_id": "c9db7431-89f7-b904-43df-baec89febee0",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create/Update Profile",
+			"request": {
+				"url": "http://localhost:9000/api/profile/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-jwt",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWYyMmUxYzkwY2VkMWM0N2U3MmZhMzQ3In0sImlhdCI6MTU5NjE5NDIyOCwiZXhwIjoxNTk2NTU0MjI4fQ.gmyppc6QgD1iFdaKXlBwL_OaPUW4dA1fI4sV8j6dYAc",
+						"description": "jwt token porch"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"status\" : \"dev\",\n\"skills\":\"c++, Qt\",\n\"socialMediaLinks\" : {\n\t\"faceBook\":\"https://facebook.com/Porchezhiyan\"\n},\n\"company\" : \"e-con\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Current Profile",
+			"request": {
+				"url": "http://localhost:9000/api/profile/me",
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-jwt",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWVmOGM1MjBjY2NhZTMxZTA3Y2JjM2RjIn0sImlhdCI6MTU5Mzg2MDUxMSwiZXhwIjoxNTk0MjIwNTExfQ.1cT6cEGM3cX3NFztCLlvdaS2WkYGtEo4fGzLqBFCymk",
+						"description": "jwt token porch"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Profiles",
+			"request": {
+				"url": "http://localhost:9000/api/profile/",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get User's Profile",
+			"request": {
+				"url": "http://localhost:9000/api/profile/user/5f017e6913a5a22bb6193eb3\n",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Profile",
+			"request": {
+				"url": "http://localhost:9000/api/profile/",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "x-auth-jwt",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWYwMTdlNjkxM2E1YTIyYmI2MTkzZWIzIn0sImlhdCI6MTU5MzkzMzQxNywiZXhwIjoxNTk0MjkzNDE3fQ.QQj5S12LSAOkTF7jqWJYxdvOIVtFg5CJ_iHL5HQhsSw",
+						"description": "jwt token porch"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add Experience",
+			"request": {
+				"url": "http://localhost:9000/api/profile/experience",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "x-auth-jwt",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWYyMmUxYzkwY2VkMWM0N2U3MmZhMzQ3In0sImlhdCI6MTU5NjE5NDIyOCwiZXhwIjoxNTk2NTU0MjI4fQ.gmyppc6QgD1iFdaKXlBwL_OaPUW4dA1fI4sV8j6dYAc",
+						"description": "jwt token porch"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\" : \"engg\",\n\t\"company\" : \"company\",\n\t\"location\" : \"chennai\",\n\t\"from\" : \"07-30-2020\",\n\t\"current\" : true,\n\t\"description\":\"engineer\"\n\t\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Experience",
+			"request": {
+				"url": "http://localhost:9000/api/profile/experience/5f23f921866ad842ecfe87df",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-auth-jwt",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWYyMmUxYzkwY2VkMWM0N2U3MmZhMzQ3In0sImlhdCI6MTU5NjEyMTU0NSwiZXhwIjoxNTk2NDgxNTQ1fQ.uKZnw6xy12Ol3im8DDZfGp7d2gmMnHB0PZJPWyoBJZE",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add/Update Education",
+			"request": {
+				"url": "http://localhost:9000/api/profile/education",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-auth-jwt",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWYyMmUxYzkwY2VkMWM0N2U3MmZhMzQ3In0sImlhdCI6MTU5NjE5NDIyOCwiZXhwIjoxNTk2NTU0MjI4fQ.gmyppc6QgD1iFdaKXlBwL_OaPUW4dA1fI4sV8j6dYAc",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"school\" : \"RMD\",\n\t\"degree\" : \"Btech\",\n\t\"fieldOfStudy\" : \"IT\",\n\t\"from\" : \"07-30-2014\",\n\t\"to\" : \"07-30-2018\",\n\t\"description\":\"college\"\n\t\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Education",
+			"request": {
+				"url": "http://localhost:9000/api/profile/education/5f26ca549a6f2111e2621512",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-auth-jwt",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWYyMmUxYzkwY2VkMWM0N2U3MmZhMzQ3In0sImlhdCI6MTU5NjE5NDIyOCwiZXhwIjoxNTk2NTU0MjI4fQ.gmyppc6QgD1iFdaKXlBwL_OaPUW4dA1fI4sV8j6dYAc",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get GitHub Repos",
+			"request": {
+				"url": "http://localhost:9000/api/profile/gitHub/Porchezhiyan",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
